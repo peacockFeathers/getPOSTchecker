@@ -1,0 +1,16 @@
+<!doctype html>
+    <h1>{{type}}</h1>
+    
+    <h2>Items sent in URL Query:</h2>
+    <ul>
+      {{#each dataListQuery}}
+        <li>{{this.name}}: {{this.value}}
+      {{/each}}
+    </ul>
+    
+    <h3>{{postIntro}}</h3>
+    <ul>
+      {{#each dataListBody}}
+        <li>{{this.name}}: {{this.value}}
+      {{/each}}
+    </ul>
